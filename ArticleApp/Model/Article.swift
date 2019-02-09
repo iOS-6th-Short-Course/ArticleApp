@@ -29,5 +29,19 @@ class Article {
         
     }
     
+    init(id: Int, title: String, description: String, author: String, thumbnail: String, cateId: Int) {
+        
+        self.id = id
+        self.title = title
+        self.category = Category(id: cateId, name: "")
+        self.description = description
+        self.thumbnail = thumbnail
+        self.author = author
+        self.createdDate = ""
+        
+    }
+    
+    
+    
 }
 
