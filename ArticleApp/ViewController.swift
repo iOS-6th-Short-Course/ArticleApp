@@ -64,7 +64,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         let delete = UIContextualAction(style: .destructive, title: "Delete") { (_, _, _) in
-            self.articleService.deleteArticle(id: self.articles[indexPath.row].id, completionHandler: { (msg, status) in
+            self.articleService.deleteArticle(id: self.articles[indexPath.row].id!, completionHandler: { (msg, status) in
                 
                 if status {
                     DispatchQueue.main.async {

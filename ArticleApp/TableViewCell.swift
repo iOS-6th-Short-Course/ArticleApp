@@ -38,7 +38,7 @@ class TableViewCell: UITableViewCell {
 //        }
         thumbnailImageView.kf.indicatorType = .activity
 //        thumbnailImageView.kf.setImage(with: URL(string: article.thumbnail))
-        thumbnailImageView.kf.setImage(with: URL(string: article.thumbnail), placeholder: #imageLiteral(resourceName: "default-image"))
+        thumbnailImageView.kf.setImage(with: URL(string: article.thumbnail!), placeholder: #imageLiteral(resourceName: "default-image"))
         
     }
     
